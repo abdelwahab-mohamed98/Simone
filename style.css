@@ -1,0 +1,682 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    color: #4c4d4d;
+    box-sizing: border-box;
+}
+*::selection {
+    background: #20c997;
+    color: #fff;
+    text-shadow: none
+}
+:root{
+    --main-color: #20c997;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+.logo{
+    width: 10%;
+}
+.cat a{
+    text-decoration: none;
+    padding: 1rem;
+    margin: auto;
+    color: #fff;
+}
+.cat a:hover{
+    color: var(--main-color);
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+.hidden{
+    width: 10%;
+}
+header{
+    background: url(photos/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.header-container{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+}
+.header-content p{
+    padding: 1.5rem 0;
+    font-size: 1.70rem;
+    font-weight: 600;
+    color: #fff;
+}
+.p1{
+    color: #dee3e4;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.header-content h2{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+    position: relative;
+}
+.header-content h2::after{
+    content: '';
+    animation-name: header-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.header-content a{
+    color: var(--main-color);
+    border: var(--main-color) solid 2px;
+    border-radius: 2rem;
+    padding: 0.8rem 2.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.header-content a:hover{
+    color: #fff;
+    background-color: var(--main-color);
+    border: var(--main-color) solid 2px;
+    border-radius: 2rem;
+    padding: 0.8rem 2.6rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+@keyframes header-animation {
+    0%   {content: ' |';}
+    5%   {content: '';}
+    10%   {content: ' |';}
+    15%   {content: 'A |';}
+    20%   {content: 'Ab |';}
+    25%   {content: 'Abd |';}
+    30%   {content: 'Abde |';}
+    35%   {content: 'Abdel |';}
+    40%   {content: 'Abdelw |';}
+    45%   {content: 'Abdelwa |';}
+    50%   {content: 'Abdelwah |';}
+    55%   {content: 'Abdelwaha |';}
+    60%   {content: 'Abdelwahab |';}
+    65%   {content: 'Abdelwaha |';}
+    70%   {content: 'Abdelwah |';}
+    75%   {content: 'Abdelwa |';}
+    80%   {content: 'Abdelw |';}
+    85%   {content: 'Abdel |';}
+    90%   {content: 'Abde |';}
+    92%   {content: 'Abd |';}
+    96%   {content: 'Ab |';}
+    98%   {content: ' |';}
+    99%   {content: '';}
+    100%   {content: ' |';}
+
+}
+.about{
+    background-color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem 7rem 5rem;
+}
+.title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.title p{
+    font-weight: 600;
+    font-size: 2.25rem;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    right: 30%;
+    z-index: 55555;
+    color: #000;
+}
+.title h2{
+    position: relative;
+    top: 0;
+    left: 10%;
+    opacity: .4;
+    font-weight: 600;
+    font-size: 8.25rem;
+    width: 80%;
+    color: #dee3e4;
+    text-transform: uppercase;
+    z-index: 0;
+    user-select: none;
+}
+.title p::after{
+    content: '';
+    border-bottom: var(--main-color) 3px solid;
+    position: absolute;
+    bottom: -10%;
+    right: calc(90%/2);
+    left: calc(90%/2);
+    width: 10%;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Start Of Right Hand Part */
+.rh{
+    width: 30%;
+    padding-left: 1rem;
+}
+.rh ul{
+    display: flex;
+    flex-direction: column;
+}
+.rh li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.brd{
+    border-bottom: 1px solid #eaeaea;
+}
+.rh span{
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+.rh li a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.rh li a:hover{
+    color: #1baa80;
+}
+.cv-btn{
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border-width: 2px;
+    color: #fff;
+    background-color: var(--main-color);
+    text-decoration: none;
+    border-radius: 50rem;
+}
+.cv-btn:hover{
+    background-color: #1baa80;
+}
+.btn{
+    margin-top: 1.5rem;
+}
+/* End Of Right Hand Part */
+/* Start Of Right Hand Part */
+.lh{
+    width: 70%;
+    padding-right: 1rem;
+}
+.lh h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #252b33;
+}
+.lh p{
+    margin-bottom: 1rem;
+    color: #4c4d4d;
+}
+.lh span{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+/* End Of Left Hand Part */
+/* Start Of Ex Part */
+.about-ex{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 0 7rem;
+}
+.about h4{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+.ex-item{
+    border-right: #9c9c9c 1px dotted;
+    padding-right: 5rem;
+}
+/* End Of Ex Part */
+
+/* Start Of Services Part */
+.services{
+    background-color: #f8f9fa;
+}
+.services i{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--main-color);
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.services-content{
+    display: flex;
+    flex-direction: row;
+}
+.serv-items{
+    margin: 2.5rem 0;
+}
+.serv-items h3{
+    color: #252b33;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.serv-items p{
+    width: 90%;
+    font-size: 1rem;
+}
+.serv-icon{
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    border-radius: 5px;
+    margin-right: 1rem;
+
+    
+}
+/* Start Of Left Hand Services Part */
+.lh-services{
+    width: 50%;
+    margin-right: 2rem;
+}
+.lh-serv-items{
+    display: flex;
+}
+/* Start Of Right Hand Services Part */
+.rh-services{
+    width: 50%;
+    margin-left: 2rem;
+}
+.rh-serv-items{
+    display: flex;
+}
+/* End Of Services Part */
+/* Start Of Resume Part */
+.resume-items{
+    display: flex;
+}
+.resume-items h2{
+    font-size: 1.50rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+.res-item{
+    width: 90%;
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+.res-item p{
+    margin-bottom: 1rem;
+}
+.res-item h3{
+    color: #252b33;
+    font-size: 1.85rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+.resdate{
+    background-color: var(--main-color);
+    font-weight: 400;
+    font-size: 0.85rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    padding: .35em .65em;
+    color: #fff;
+}
+.resuni{
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+/* End Of Resume Part */
+/* Start Of Skills Part */
+.skills-items{
+    display: flex;
+    width: 95%;
+}
+.skills-lh{
+    width: 50%;
+    margin-right: 2rem;
+}
+.skills-rh{
+    width: 50%;
+    margin-left: 2rem;
+}
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+    color: #212529;
+    font-weight: 500;
+}
+.progress{
+    background-color: #DDDDE0;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.progress65::after{
+    content: '';
+    height: 100%;
+    width: 65%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 2rem;
+}
+.progress95::after{
+    content: '';
+    height: 100%;
+    width: 95%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 2rem;
+}
+.progress80::after{
+    content: '';
+    height: 100%;
+    width: 80%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 2rem;
+}
+.progress70::after{
+    content: '';
+    height: 100%;
+    width: 70%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 2rem;
+}
+.progress60::after{
+    content: '';
+    height: 100%;
+    width: 60%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 2rem;
+}
+.progress99::after{
+    content: '';
+    height: 100%;
+    width: 99%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 2rem;
+}
+.skills h2{
+    font-weight: 600;
+    font-size: 1.50rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    color: #252b33;
+}
+.skill-title{
+    margin-bottom: 0.5rem;
+}
+.res-btn{
+    text-align: center;
+    margin-top: 3rem;
+}
+.res-btn a{
+    text-decoration: none;
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    border: #6c757d solid 2px;
+    border-radius: 50rem;
+}
+.res-btn a:hover{
+    background-color: #6c757d;
+    color: #fff;
+    transition: 0.5s;
+}
+/* End Of Skills Part */
+/* Start Of portflio Part */
+.portflio{
+    background-color: #f8f9fa
+}
+.port-nav ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.port-nav a{
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7b8084;
+}
+.port-nav a:hover{
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.nav-active{
+    color: var(--main-color) !important;
+    position: relative;
+}
+.nav-active::after{
+    content: '';
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--main-color);
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+.port-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+.port-img{
+    width: calc((100% - 6rem)/3);
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem ;
+    border-radius: 0.5rem;
+}
+.bg-layer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+}
+.caption{
+    position: absolute;
+    top: 100%;
+    left: calc(100%/3);
+    right: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caption h5{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.caption p{
+    color: #dee3e4;
+}
+.port-img:hover .bg-layer{
+    opacity: 1;
+    transition: 1s;
+}
+.port-img:hover .caption{
+    transition: 1s top;
+    transition-delay: 0.5s;
+    top: calc(100%/3);
+}
+.port-img img{
+    width: 100%;
+}
+/* End Of portflio Part */
+/* Start Of client-space Part */
+.clients{
+    display: flex;
+}
+.client-lh{
+    margin-right: 0.75rem;
+}
+.client-rh{
+    margin-left: 0.75rem;
+}
+.client{
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 3rem;
+}
+.client-title{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.client-details{
+    margin-left: 1rem;
+}
+.client-img img{
+    border-radius: 50%;
+}
+.client-name{
+    font-weight: 600;
+    color: #212529;
+}
+.client-mssg{
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 1.5rem;
+}
+.client-rate{
+    font-size: 0.85rem;
+}
+.client-rate i{
+    color: #ffc107;
+}
+/* End Of client-space Part */
+/* Start Of contacts Part */
+.contact{
+    background-color: #f8f9fa
+}
+.det-adress{
+    margin-top: 1rem;
+}
+.adress{
+    width: 25%;
+    margin-right: 5rem;
+}
+.adress i{
+    color: var(--main-color);
+}
+.contact-det h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #252b33;
+    font-weight: 500;
+}
+.contact-det{
+    display: flex;
+}
+.contact-det p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.send{
+    width: 100%;
+}
+.first-row{
+    display: flex;
+    width: 100%;
+}
+.first-row input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.inputs textarea{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+    height: 25vh;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.submit-btn{
+    text-align: center;
+    margin-top: 1.5rem!important;
+}
+.submit-btn button{
+    border-radius: 50rem;
+    padding: 0.8rem 2.6rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-width: 2px var(--main-color);
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    cursor: pointer;
+}
+.submit-btn button:hover{
+    background-color: #1baa80;
+    border-color: #1baa80;
+    transition: 0.5s;
+}
+/* End Of contacts Part */
+
